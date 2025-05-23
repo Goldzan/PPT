@@ -195,7 +195,7 @@ export function EnhancedStats() {
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-2">
                   <div className="w-3 h-3 bg-green-500 rounded-full"></div>
-                  <span className="text-sm font-medium">Excellent (80%+)</span>
+                  <span className="text-sm font-medium">Excellent (90%+)</span>
                 </div>
                 <span className="text-sm font-bold">{stats.scoreDistribution.excellent}</span>
               </div>
@@ -204,7 +204,7 @@ export function EnhancedStats() {
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-2">
                   <div className="w-3 h-3 bg-blue-500 rounded-full"></div>
-                  <span className="text-sm font-medium">Good (70-79%)</span>
+                  <span className="text-sm font-medium">Good (70-89%)</span>
                 </div>
                 <span className="text-sm font-bold">{stats.scoreDistribution.good}</span>
               </div>
@@ -212,17 +212,8 @@ export function EnhancedStats() {
               
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-2">
-                  <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
-                  <span className="text-sm font-medium">Average (60-69%)</span>
-                </div>
-                <span className="text-sm font-bold">{stats.scoreDistribution.average}</span>
-              </div>
-              <Progress value={(stats.scoreDistribution.average / stats.totalPapers) * 100} className="h-2" />
-              
-              <div className="flex items-center justify-between">
-                <div className="flex items-center gap-2">
                   <div className="w-3 h-3 bg-red-500 rounded-full"></div>
-                  <span className="text-sm font-medium">Needs Work (&lt;60%)</span>
+                  <span className="text-sm font-medium">Needs Work (&lt;70%)</span>
                 </div>
                 <span className="text-sm font-bold">{stats.scoreDistribution.needsWork}</span>
               </div>

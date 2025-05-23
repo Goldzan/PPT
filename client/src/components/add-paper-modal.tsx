@@ -40,22 +40,13 @@ interface AddPaperModalProps {
 }
 
 const commonSubjects = [
-  "Mathematics",
-  "Physics",
-  "Chemistry", 
-  "Biology",
-  "English Literature",
-  "History",
-  "Geography",
-  "Economics",
-  "Computer Science",
-  "Psychology",
-  "Business Studies",
-  "Art & Design"
+  "AQA Mathematics",
+  "OCR Physics",
+  "OCR Chemistry"
 ];
 
-const years = ["2024", "2023", "2022", "2021", "2020", "2019"];
-const paperNumbers = ["1", "2", "3", "4"];
+const years = ["2024", "2023", "2022", "2021", "2020", "2019", "2018", "2017"];
+const paperNumbers = ["1", "2", "3"];
 
 export function AddPaperModal({ isOpen, onClose, onSuccess, editingPaper }: AddPaperModalProps) {
   const { toast } = useToast();
